@@ -21,10 +21,10 @@
           Buyer Protection
         </li>
         <li class="px-3 hover:text-[#FF4646] cursor-pointer">
-          <Icon
+          <!-- <Icon
             name="ic:sharp-install-mobile"
             size="17"
-          />
+          /> -->
         </li>
         <li
           @mouseenter="isAccountMenu=true"
@@ -32,7 +32,7 @@
           class="relative flex items-center px-2.5 hover:text-[#FF4646] h-full cursor-pointer"
           :class="isAccountMenu?'bg-white border z-40 shadow-[0_15px_100px_40px_rgb(0,0,0,0.3)]':'border border-[#FAFAFA]'"
         >
-          <Icon
+          <!-- <Icon
             name="ph:user-thin"
             size="17"
           ></Icon>
@@ -41,7 +41,7 @@
             name="mdi:chevron-down"
             size="15"
             class="ml-5"
-          />
+          /> -->
           <div
             id="AccountMenu"
             v-if="isAccountMenu"
@@ -99,18 +99,18 @@
                 placeholder="kitchen accessories"
                 v-model="searchItem"
               >
-              <Icon
+              <!-- <Icon
                 v-if="isSearching"
                 name="eos-icons:loading"
                 size="25"
                 class="mr-2"
-              />
+              /> -->
               <button class="flex items-center h-[100%] p-1.5 px-2 bg-[#FF4646]">
-                <Icon
+                <!-- <Icon
                   name="ph:magnifying-glass"
                   size="20"
                   color="#ffffff"
-                />
+                /> -->
               </button>
             </div>
 
@@ -149,11 +149,11 @@
           >
             <span class="absolute flex items-center justify-center -right-[3px] top-0 bg-[#FF4646] h-[17px] min-w-[17px] text-xs text-white px-0.5 rounded-full">0</span>
             <div class="min-w-[40px]">
-              <Icon
+              <!-- <Icon
                 name="ph:shopping-cart-simple-light"
                 size="33"
                 :color="isCartHover ? '#FF4646':''"
-              />
+              /> -->
             </div>
           </button>
         </NuxtLink>
@@ -162,10 +162,10 @@
           @click="userStore.isMenuOverlay = true"
           class="md:hidden block rounded-full p-1.5 -mt-[4px] hover:bg-gray-200"
         >
-          <Icon
+          <!-- <Icon
             name="radix-icons:hamburger-menu"
             size="33"
-          />
+          /> -->
         </button>
       </div>
     </div>
